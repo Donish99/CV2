@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    animation: 1s ease-out 0s 1 loadAnim;   
+}
+
+@keyframes loadAnim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.back{
+    letter-spacing: 1px;
+    background: transparent;
+    position: fixed;
+    margin-top: 80px;
+    right: 80px;
+    color:white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    user-select: none;
+    transition: color 1s;
+}
+
+.back:hover{
+    color:rgb(234, 15, 30);
+}
+
+.projects{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 150px;
+    color: white;
+}
+
+.project{
+    cursor: pointer;
+    height: 200px;
+    margin-bottom: 50px;
+    transition: margin-left 1s;
+}
+
+.project:hover{
+    margin-left: 40px;
+}
+
+.project-name{
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.project-description{
+    color:rgb(234, 15, 30);
+    font-size: 20px;
+}
